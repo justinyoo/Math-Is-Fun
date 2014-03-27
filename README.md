@@ -3,7 +3,7 @@
 This is a website for primary school students to play with their numeracy skills.
 
 
-# Licenses #
+# License #
 
 **Math is Fun** is released under [MIT License](http://opensource.org/licenses/MIT).
 
