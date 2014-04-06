@@ -32,6 +32,10 @@
                 break;
             case "Division":
                 symbol = "&divide;";
+                while (Math.floor(number1 / number2) != number1 / number2) {
+                    number1 = getNumber();
+                    number2 = getNumber();
+                }
                 solution = number1 / number2;
                 break;
             default:
