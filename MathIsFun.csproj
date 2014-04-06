@@ -57,22 +57,32 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="multiplication.html" />
+    <Content Include="substraction.html" />
+    <Content Include="addition.html" />
+    <Content Include="division.html" />
     <Content Include="images\bg_hr.png" />
     <Content Include="images\blacktocat.png" />
     <Content Include="images\icon_download.png" />
     <Content Include="images\sprite_download.png" />
     <Content Include="index.html" />
+    <Content Include="javascripts\jquery-1.10.2.min.js" />
     <Content Include="javascripts\main.js" />
+    <Content Include="javascripts\modernizr-2.6.2.min.js" />
+    <Content Include="javascripts\plugins.js" />
     <Content Include="params.json" />
     <Content Include="README.md" />
+    <Content Include="stylesheets\main.css" />
+    <Content Include="stylesheets\normalize.css" />
     <Content Include="stylesheets\pygment_trac.css" />
+    <Content Include="stylesheets\style.css" />
     <Content Include="stylesheets\stylesheet.css" />
-    <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
