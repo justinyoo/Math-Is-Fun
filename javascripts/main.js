@@ -44,7 +44,7 @@
 
         $("#number1").text(number1);
         $("#number2").text(number2);
-        $("#symbol").text(symbol);
+        $("#symbol").html(symbol);
         $("#solution").val(solution);
 
         $("#submit").click(function () {
