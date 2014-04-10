@@ -14,12 +14,17 @@
 .input-correct {
     background-color: #5cb85c;
     border-color: transparent;
-    color: #ebebeb;}
+    color: #ebebeb;
+}
 
 .input-wrong {
     background-color: #d9534f;
     border-color: transparent;
     color: #ebebeb;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0px;
 }
 
 @media (max-width: 767px) {
@@ -33,6 +38,14 @@
 
     .margin-bottom-xs {
         margin-bottom: 0px;
+    }
+
+    .margin-left-xs {
+        margin-left: 0px;
+    }
+
+    .margin-right-xs {
+        margin-right: 0px;
     }
 
     .placeholder, #symbol, #number1, #number2, #answer, #result {
@@ -65,6 +78,30 @@
         margin-bottom: 5px;
     }
 
+    .margin-left-sm {
+        margin-left: 0px;
+    }
+
+    .margin-right-sm {
+        margin-right: 0px;
+    }
+
+    .margin-right-0 {
+        margin-right: 0px;
+    }
+
+    .margin-left-0 {
+        margin-left: 0px;
+    }
+
+    .padding-right-0 {
+        padding-right: 0px;
+    }
+
+    .padding-left-0 {
+        padding-left: 0px;
+    }
+
     .placeholder, #symbol, #number1, #number2, #answer, #result {
         font-size: 25px;
     }
@@ -95,6 +132,30 @@
         margin-bottom: 10px;
     }
 
+    .margin-left-md {
+        margin-left: 0px;
+    }
+
+    .margin-right-md {
+        margin-right: 0px;
+    }
+
+    .margin-right-0 {
+        margin-right: 0px;
+    }
+
+    .margin-left-0 {
+        margin-left: 0px;
+    }
+
+    .padding-right-0 {
+        padding-right: 0px;
+    }
+
+    .padding-left-0 {
+        padding-left: 0px;
+    }
+
     .placeholder, #symbol, #number1, #number2, #answer, #result {
         font-size: 30px;
     }
@@ -123,6 +184,30 @@
 
     .margin-bottom-lg {
         margin-bottom: 15px;
+    }
+
+    .margin-left-lg {
+        margin-left: 0px;
+    }
+
+    .margin-right-lg {
+        margin-right: 0px;
+    }
+
+    .margin-right-0 {
+        margin-right: 0px;
+    }
+
+    .margin-left-0 {
+        margin-left: 0px;
+    }
+
+    .padding-right-0 {
+        padding-right: 0px;
+    }
+
+    .padding-left-0 {
+        padding-left: 0px;
     }
 
     .placeholder, #symbol, #number1, #number2, #answer, #result {
