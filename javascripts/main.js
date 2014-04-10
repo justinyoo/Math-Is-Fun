@@ -6,7 +6,7 @@
     };
 
     $(document).ready(function() {
-        var calcType = $("#menu li.current").text();
+        var calcType = $("#menu li.active").text();
 
         var number1 = getNumber();
         var number2 = getNumber();
@@ -50,9 +50,9 @@
         $("#submit").click(function () {
             var answer = $("#answer").val();
             if (solution == answer) {
-                $("#result").removeClass("wrong").addClass("correct").text("Correct!!!");
+                $("#result").removeClass("alert-danger").addClass("alert-success").text("Correct!!!");
             } else {
-                $("#result").removeClass("correct").addClass("wrong").text("Oh oh. Try again.");
+                $("#result").removeClass("alert-success").addClass("alert-danger").text("Oh oh. Try again.");
             }
         });
 

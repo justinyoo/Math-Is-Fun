@@ -1,4 +1,28 @@
-﻿.correct {
+﻿body {
+    padding-top: 70px;
+}
+
+.margin-top-medium {
+    margin-top: 20px;
+}
+
+.placeholder, #symbol, #number1, #number2, #answer, #result {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.placeholder, #symbol {
+    width: 20px;
+}
+
+#number1, #number2, #answer {
+    width: 70px;
+    text-align: right;
+}
+
+
+.correct {
     color: green;
 }
 
