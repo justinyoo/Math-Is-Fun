@@ -11,6 +11,17 @@
     padding: 0px;
 }
 
+.input-correct {
+    background-color: #5cb85c;
+    border-color: transparent;
+    color: #ebebeb;}
+
+.input-wrong {
+    background-color: #d9534f;
+    border-color: transparent;
+    color: #ebebeb;
+}
+
 @media (max-width: 767px) {
     body {
         padding-top: 40px;

@@ -53,8 +53,10 @@
     var calculate = function(solution) {
         var answer = $("#answer").val();
         if (solution == answer) {
+            $("#answer").removeClass("input-wrong").addClass("input-correct");
             $("#result").removeClass("alert-danger").addClass("alert-success").text("Correct!!!");
         } else {
+            $("#answer").removeClass("input-correct").addClass("input-wrong");
             $("#result").removeClass("alert-success").addClass("alert-danger").text("Oh oh. Try again.");
         }
         return false;
