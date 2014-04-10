@@ -47,6 +47,7 @@
         $("#number1").text(number1);
         $("#number2").text(number2);
         $("#symbol").html(symbol);
+        $("#answer").val("");
         $("#solution").val(solution);
     };
 

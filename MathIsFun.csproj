@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="multiplication.html" />
+    <Content Include="stylesheets\bootstrap.min.css" />
     <Content Include="substraction.html" />
     <Content Include="addition.html" />
     <Content Include="division.html" />
