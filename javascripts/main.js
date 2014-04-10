@@ -1,11 +1,13 @@
-(function ($) {
-    var getNumber = function () {
+;"use strict";
+
+(function($) {
+    var getNumber = function() {
         var max = 99;
         var min = 1;
         return Math.floor(Math.random() * (max - min + 1)) + min;
     };
 
-    $(document).ready(function() {
+    var loadFormula = function() {
         var calcType = $("#menu li.active").text();
 
         var number1 = getNumber();
@@ -46,18 +48,28 @@
         $("#number2").text(number2);
         $("#symbol").html(symbol);
         $("#solution").val(solution);
+    };
 
-        $("#submit").click(function () {
-            var answer = $("#answer").val();
-            if (solution == answer) {
-                $("#result").removeClass("alert-danger").addClass("alert-success").text("Correct!!!");
-            } else {
-                $("#result").removeClass("alert-success").addClass("alert-danger").text("Oh oh. Try again.");
-            }
+    var calculate = function(solution) {
+        var answer = $("#answer").val();
+        if (solution == answer) {
+            $("#result").removeClass("alert-danger").addClass("alert-success").text("Correct!!!");
+        } else {
+            $("#result").removeClass("alert-success").addClass("alert-danger").text("Oh oh. Try again.");
+        }
+        return false;
+    };
+
+    $(document).ready(function () {
+        loadFormula();
+
+        $("form").submit(function(event) {
+            event.preventDefault();
+            calculate($("#solution").val());
         });
 
-        $("#again").click(function() {
-            location.reload(false);
+        $("#try-again").click(function() {
+            loadFormula();
         });
     });
-})(jQuery)
+})(jQuery);

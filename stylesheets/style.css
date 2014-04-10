@@ -1,31 +1,132 @@
-﻿body {
-    padding-top: 70px;
-}
-
-.margin-top-medium {
-    margin-top: 20px;
-}
-
-.placeholder, #symbol, #number1, #number2, #answer, #result {
+﻿.placeholder, #symbol, #number1, #number2, #answer, #result {
     display: inline-block;
-    font-size: 40px;
     font-weight: bold;
 }
 
-.placeholder, #symbol {
-    width: 20px;
-}
-
 #number1, #number2, #answer {
-    width: 80px;
     text-align: right;
 }
 
-
-.correct {
-    color: green;
+#answer {
+    padding: 0px;
 }
 
-.wrong {
-    color: red;
+@media (max-width: 767px) {
+    body {
+        padding-top: 40px;
+    }
+
+    .margin-top-xs {
+        margin-top: 10px;
+    }
+
+    .margin-bottom-xs {
+        margin-bottom: 0px;
+    }
+
+    .placeholder, #symbol, #number1, #number2, #answer, #result {
+        font-size: 20px;
+    }
+
+    .placeholder, #symbol {
+        width: 20px;
+    }
+
+    #number1, #number2, #answer {
+        width: 40px;
+    }
+
+    #answer {
+        height: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        padding-top: 45px;
+    }
+
+    .margin-top-sm {
+        margin-top: 10px;
+    }
+
+    .margin-bottom-sm {
+        margin-bottom: 5px;
+    }
+
+    .placeholder, #symbol, #number1, #number2, #answer, #result {
+        font-size: 25px;
+    }
+
+    .placeholder, #symbol {
+        width: 20px;
+    }
+
+    #number1, #number2, #answer {
+        width: 50px;
+    }
+
+    #answer {
+        height: 50px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        padding-top: 50px;
+    }
+
+    .margin-top-md {
+        margin-top: 10px;
+    }
+
+    .margin-bottom-md {
+        margin-bottom: 10px;
+    }
+
+    .placeholder, #symbol, #number1, #number2, #answer, #result {
+        font-size: 30px;
+    }
+
+    .placeholder, #symbol {
+        width: 20px;
+    }
+
+    #number1, #number2, #answer {
+        width: 60px;
+    }
+
+    #answer {
+        height: 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        padding-top: 60px;
+    }
+
+    .margin-top-lg {
+        margin-top: 20px;
+    }
+
+    .margin-bottom-lg {
+        margin-bottom: 15px;
+    }
+
+    .placeholder, #symbol, #number1, #number2, #answer, #result {
+        font-size: 40px;
+    }
+
+    .placeholder, #symbol {
+        width: 20px;
+    }
+
+    #number1, #number2, #answer {
+        width: 60px;
+    }
+
+    #answer {
+        height: 60px;
+    }
 }

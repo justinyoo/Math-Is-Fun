@@ -59,37 +59,42 @@
     </div>
     
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                <span class="placeholder"></span>
-                <span id="number1"></span>
+        <form role="form">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <span class="placeholder"></span>
+                    <span id="number1"></span>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                <span id="symbol"></span>
-                <span id="number2"></span>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <span id="symbol"></span>
+                    <span id="number2"></span>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                <span class="placeholder"></span>
-                <input type="text" id="answer" />
-            </div>
-        </div>
-        <div class="row margin-top-medium">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                <input type="hidden" id="solution" />
-                <input type="button" id="submit" class="btn btn-primary" value="Submit" />
-                <input type="button" id="try-again" class="btn btn-primary" value="Try again?" />
-            </div>
-        </div>
 
-        <div class="row margin-top-medium">
-            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                <span id="result" class="alert"></span>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <div class="form-group margin-bottom-xs margin-bottom-sm margin-bottom-md margin-bottom-lg">
+                        <span class="placeholder"></span>
+                        <input type="text" id="answer" class="form-control" />
+                    </div>
+                </div>
             </div>
-        </div>
+            <div class="row margin-top-xs margin-top-sm margin-top-md margin-top-lg">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <input type="hidden" id="solution" />
+                    <input type="submit" id="submit" class="btn btn-primary" value="Submit" />
+                    <input type="button" id="try-again" class="btn btn-primary" value="Try again?" />
+                </div>
+            </div>
+
+            <div class="row margin-top-xs margin-top-sm margin-top-md margin-top-lg">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <span id="result" class="alert"></span>
+                </div>
+            </div>
+        </form>
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
