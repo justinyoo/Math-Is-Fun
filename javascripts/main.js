@@ -49,19 +49,23 @@
         $("#number1").text(number1);
         $("#number2").text(number2);
         $("#symbol").html(symbol);
-        $("#answer").val("");
+        $("#answer").val("").focus();
         $("#solution").val(solution);
+
+        $("#answer").removeClass("input-wrong").removeClass("input-correct");
+        $("#result").removeClass("alert-danger").removeClass("alert-success").text("").hide();
     };
 
     var calculate = function(solution) {
         var answer = $("#answer").val();
         if (solution == answer) {
             $("#answer").removeClass("input-wrong").addClass("input-correct");
-            $("#result").removeClass("alert-danger").addClass("alert-success").text("Correct!!!");
+            $("#result").removeClass("alert-danger").addClass("alert-success").text("Correct!!!").show();
         } else {
             $("#answer").removeClass("input-correct").addClass("input-wrong");
-            $("#result").removeClass("alert-success").addClass("alert-danger").text("Oh oh. Try again.");
+            $("#result").removeClass("alert-success").addClass("alert-danger").text("Oh oh. Try again.").show();
         }
+        $("#answer").focus();
         return false;
     };
 
